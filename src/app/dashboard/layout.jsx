@@ -2,6 +2,7 @@ import React from 'react'
 import { SideBar, SideBarBody, SideBarFooter, SideBarItem } from '../../Elements/SideBar'
 import Avatar from '../../components-react-nex/Avatar/Avatar'
 import { SideBarItemsData } from '../../../constants/sidebarItemData';
+import ScheduleMeeting from '@/Elements/ScheduleMeeting';
 
 const Dashboardlayout = ({ children }) => {
 
@@ -22,8 +23,8 @@ const Dashboardlayout = ({ children }) => {
         </SideBar>
       </div>
       {children}
-      <div className='flex-1 hidden md:block md:min-w-[300px] p-4'>
-        
+      <div className='flex-1 hidden md:flex p-4 pl-0'>
+        <ScheduleMeeting />
       </div>
     </div>
   )
